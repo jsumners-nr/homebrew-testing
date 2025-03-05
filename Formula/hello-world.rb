@@ -5,21 +5,21 @@
 class HelloWorld < Formula
   desc "Testing gorleaser with homebrew"
   homepage "https://github.com/jsumners-nr/cli-tool-testing"
-  version "0.1.0"
+  version "0.4.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/jsumners-nr/cli-tool-testing/releases/download/v0.1.0/hello_world_0.1.0_darwin_amd64.tar.gz"
-      sha256 "6b43e628f86ee5386e42cd453e35da1f0c805c9b5f26381c5e7db106b40d96ef"
+      url "https://github.com/jsumners-nr/cli-tool-testing/releases/download/v0.4.0/hello_world_0.4.0_darwin_amd64.tar.gz"
+      sha256 "75e83cb348b11daf797856025ceb9da0eda6d04c450f5a84a7da8eb59cbf57b5"
 
       def install
         bin.install "hello"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/jsumners-nr/cli-tool-testing/releases/download/v0.1.0/hello_world_0.1.0_darwin_arm64.tar.gz"
-      sha256 "f1ac007267dee900ffa80332c37a1fb86805104874b77df1645bd94c07132eff"
+      url "https://github.com/jsumners-nr/cli-tool-testing/releases/download/v0.4.0/hello_world_0.4.0_darwin_arm64.tar.gz"
+      sha256 "1fbe122210d425861e10d6b18ca6b2dcf09a6a6f60e51f156c7c47a9c37e2384"
 
       def install
         bin.install "hello"
@@ -30,8 +30,8 @@ class HelloWorld < Formula
   on_linux do
     if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/jsumners-nr/cli-tool-testing/releases/download/v0.1.0/hello_world_0.1.0_linux_amd64.tar.gz"
-        sha256 "2f1c443882c4569ed9b229bd70a09fc6141b63088a24b39cb45b746551d2fa6b"
+        url "https://github.com/jsumners-nr/cli-tool-testing/releases/download/v0.4.0/hello_world_0.4.0_linux_amd64.tar.gz"
+        sha256 "d91a55a44a706b599ba9e6640eadb4f608e8b9f967aa95596d44b728821f7dc9"
 
         def install
           bin.install "hello"
@@ -40,8 +40,8 @@ class HelloWorld < Formula
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/jsumners-nr/cli-tool-testing/releases/download/v0.1.0/hello_world_0.1.0_linux_arm64.tar.gz"
-        sha256 "00cf58c2fd7a36cfd419cf73f48acd6c98e3287c61792e978d5759254ef69bd5"
+        url "https://github.com/jsumners-nr/cli-tool-testing/releases/download/v0.4.0/hello_world_0.4.0_linux_arm64.tar.gz"
+        sha256 "ebcddd9309c40125ee8e9a581742497e5b3edb2ce8e6d73702d9123c694963b6"
 
         def install
           bin.install "hello"
